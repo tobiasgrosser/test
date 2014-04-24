@@ -11,6 +11,14 @@
 <base href="/" >
 <title>{{ page.title }} - polyhedral.info </title>
 
+<script type="text/javascript">
+var hostname = document.location.host
+if (hostname.indexOf("github.io") > -1) {
+       base = "http://" + hostname + document.location.pathname.replace(/(\/[^/]*\/).*/, "$1")
+       document.getElementsByTagName("base")[0].setAttribute("href", base);
+}
+</script>
+
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 <link href="style.css" rel="stylesheet" type="text/css" media="print" />
 <link rel="shortcut icon" href="/favicon.ico" />
