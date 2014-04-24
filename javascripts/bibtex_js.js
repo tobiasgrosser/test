@@ -506,14 +506,14 @@ function BibtexDisplay() {
 
 function bibtex_js_draw() {
   $(".bibtex_template").hide();
-  $("#bibtex_input").load('/Publications.bib', function() {
+  $("#bibtex_input").load('./Publications.bib', function() {
     (new BibtexDisplay()).displayBibtex($("#bibtex_input").val(), $("#bibtex_display"));
   });
 }
 
 function bibtex_js_citations() {
   $(".bibtex_template").hide();
-  $("#bibtex_input").load('/Publications.bib', function() {
+  $("#bibtex_input").load('./Publications.bib', function() {
     (new BibtexDisplay()).displayBibtexCitations($("#bibtex_input").val());
   });
 }
